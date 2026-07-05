@@ -1,0 +1,92 @@
+{
+  "project_name": "TechAssist Pro",
+  "theme": "Light",
+  "archetype": "Hybrid: Archetype 4 (Swiss/Editorial) + Archetype 1 (Organic/Approachable)",
+  "design_vision": "A premium, editorial-style IT support website that breaks the typical 'blue-tinted tech' mold. It uses high-contrast serif typography for authority, paired with warm earthy background tones (linen/oatmeal) and terracotta accents to feel approachable and human.",
+  "colors": {
+    "background": "#FAF9F6",
+    "foreground": "#1C1C1C",
+    "primary": "#E65F2B",
+    "primary_foreground": "#FFFFFF",
+    "surface": "#F0EFEB",
+    "border": "#E2E0D8",
+    "footer_bg": "#111827",
+    "footer_text": "#F9FAFB",
+    "muted": "#737373",
+    "accent_hover": "#CF5222"
+  },
+  "typography": {
+    "font_families": {
+      "headings": "'Playfair Display', serif",
+      "body": "'Outfit', sans-serif"
+    },
+    "google_fonts_url": "https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap",
+    "hierarchy": {
+      "h1": "text-5xl md:text-6xl+ font-serif tracking-tighter leading-none font-bold text-foreground",
+      "h2": "text-4xl md:text-5xl font-serif tracking-tight leading-tight font-semibold text-foreground",
+      "h3": "text-2xl md:text-3xl font-serif tracking-tight leading-snug font-medium",
+      "h4": "text-lg md:text-xl font-sans font-medium tracking-normal",
+      "body": "text-base md:text-lg font-sans font-light leading-relaxed text-muted",
+      "overline": "text-xs font-sans uppercase tracking-[0.2em] font-semibold text-primary"
+    }
+  },
+  "layout": {
+    "spacing_system": "Generous spacing. Use py-24 or py-32 for section padding. Container max-width: max-w-7xl mx-auto px-6 md:px-12.",
+    "grid_strategy": "The 'Tetris' Grid (Mode A). Asymmetrical spans. Avoid uniform 3-column bootstrap grids. Use overlapping elements and negative space."
+  },
+  "components": {
+    "navigation": {
+      "style": "Crystal Glassmorphism",
+      "classes": "fixed top-0 w-full z-50 backdrop-blur-xl bg-[#FAF9F6]/80 border-b border-black/5"
+    },
+    "buttons": {
+      "primary": "bg-primary text-white rounded-none px-8 py-4 font-sans font-medium hover:bg-accent_hover transition-colors duration-300 flex items-center gap-2",
+      "secondary": "border border-foreground text-foreground bg-transparent rounded-none px-8 py-4 font-sans font-medium hover:bg-foreground hover:text-white transition-colors duration-300"
+    },
+    "cards": {
+      "service_card": "group relative bg-surface p-8 md:p-12 rounded-none border border-border hover:-translate-y-2 hover:shadow-xl transition-all duration-500 overflow-hidden",
+      "industry_card": "relative h-[400px] overflow-hidden group border border-border"
+    },
+    "forms": {
+      "strategy": "Use Shadcn customized. Sharp corners (rounded-none), bg-transparent, border-b-2 only (no full borders) for a premium tactile feel."
+    }
+  },
+  "pages": {
+    "Hero_Home": "Split asymmetric layout. Left: Massive H1 typography + primary CTA. Right: Image block with a 1px border. Section below: Marquee of client logos (monochrome).",
+    "Services": "Editorial grid layout. Each service gets a 'bento' block. Mix tall and wide blocks. Images used purely as textures inside the blocks.",
+    "Industries": "Alternating 'Z-pattern' layout with massive negative space. Large image on left, content on right, switching next row.",
+    "About_Us": "Story-driven. Large drop-caps. Diverse team imagery in a mosaic layout.",
+    "Contact_Us": "2-column split screen. Left side deep footer_bg color with white text and massive typography. Right side warm linen background with minimal input fields."
+  },
+  "media": {
+    "hero": {
+      "url": "https://images.unsplash.com/photo-1718220216044-006f43e3a9b1?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzNTl8MHwxfHNlYXJjaHwzfHxwcm9mZXNzaW9uYWwlMjBJVCUyMHN1cHBvcnQlMjBtb2Rlcm4lMjBvZmZpY2V8ZW58MHx8fHwxNzgzMjU0MTc5fDA&ixlib=rb-4.1.0&q=85",
+      "alt": "Modern professional IT office"
+    },
+    "about_team": {
+      "url": "https://images.unsplash.com/photo-1573164574572-cb89e39749b4?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1ODh8MHwxfHNlYXJjaHwxfHxkaXZlcnNlJTIwdGVhbSUyMG1lZXRpbmclMjB0ZWNoJTIwb2ZmaWNlfGVufDB8fHx8MTc4MzI1NDE3OXww&ixlib=rb-4.1.0&q=85",
+      "alt": "Diverse tech team meeting"
+    },
+    "services": {
+      "managed_it": "https://images.unsplash.com/photo-1559136555-9303baea8ebd?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzNTl8MHwxfHNlYXJjaHwxfHxwcm9mZXNzaW9uYWwlMjBJVCUyMHN1cHBvcnQlMjBtb2Rlcm4lMjBvZmZpY2V8ZW58MHx8fHwxNzgzMjU0MTc5fDA&ixlib=rb-4.1.0&q=85",
+      "cloud_services": "https://images.unsplash.com/photo-1667984390538-3dea7a3fe33d?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2OTV8MHwxfHNlYXJjaHwxfHxjbG91ZCUyMGNvbXB1dGluZyUyMGRhdGF8ZW58MHx8fHwxNzgzMjU0MTg2fDA&ixlib=rb-4.1.0&q=85",
+      "cybersecurity": "https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1MTN8MHwxfHNlYXJjaHwyfHxjeWJlcnNlY3VyaXR5JTIwc2NyZWVuJTIwY29kZXxlbnwwfHx8fDE3ODMyNTQxODZ8MA&ixlib=rb-4.1.0&q=85",
+      "network_support": "https://images.unsplash.com/photo-1683322499436-f4383dd59f5a?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2Nzd8MHwxfHNlYXJjaHwxfHxzZXJ2ZXIlMjBkYXRhJTIwY2VudGVyJTIwY2FibGVzfGVufDB8fHx8MTc4MzI1NDE3OXww&ixlib=rb-4.1.0&q=85",
+      "data_backup": "https://images.pexels.com/photos/17489156/pexels-photo-17489156.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      "help_desk": "https://images.unsplash.com/photo-1712159018726-4564d92f3ec2?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDk1Nzd8MHwxfHNlYXJjaHwyfHxjYWxsJTIwY2VudGVyJTIwaGVscCUyMGRlc2t8ZW58MHx8fHwxNzgzMjU0MTg2fDA&ixlib=rb-4.1.0&q=85"
+    },
+    "industries": {
+      "finance": "https://images.unsplash.com/photo-1686100511314-7d4a52987f2f?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NTYxODl8MHwxfHNlYXJjaHwyfHxtb2Rlcm4lMjBmaW5hbmNlJTIwY29ycG9yYXRlJTIwb2ZmaWNlfGVufDB8fHx8MTc4MzI1NDE3OXww&ixlib=rb-4.1.0&q=85",
+      "healthcare": "https://images.unsplash.com/photo-1628372095387-017d1099fc19?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzV8MHwxfHNlYXJjaHwxfHxoZWFsdGhjYXJlJTIwaG9zcGl0YWwlMjBwcm9mZXNzaW9uYWx8ZW58MHx8fHwxNzgzMjU0MTg2fDA&ixlib=rb-4.1.0&q=85",
+      "manufacturing": "https://images.unsplash.com/photo-1717386255773-1e3037c81788?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzB8MHwxfHNlYXJjaHwxfHxtYW51ZmFjdHVyaW5nJTIwdGVjaCUyMG1vZGVybnxlbnwwfHx8fDE3ODMyNTQxODd8MA&ixlib=rb-4.1.0&q=85"
+    }
+  },
+  "motion": {
+    "strategy": "Subtle and sophisticated. Avoid heavy bouncy animations. Use Framer Motion for smooth, slow, ease-out-quart fade-ups.",
+    "hover_states": "Images inside cards should scale up by 1.05 on card hover. Cards should have a slight -translate-y-1 lift."
+  },
+  "accessibility": {
+    "data_testid": "ALL interactive and key informational elements MUST include a data-testid attribute in kebab-case."
+  },
+  "instructions_to_main_agent": "Implement this exactly. Use Tailwind for structure and Shadcn for the Contact Form. Apply the Google Fonts link in the root HTML/CSS. Do not use placeholder images, use the provided Media URLs. Build the pages (Home, Services, Industries, About Us, Contact Us) and link them in the Nav. The Contact form must hook up to a basic local DB/state logic as required. Never use Space Grotesk, Inter, Roboto, or generic SaaS blue gradients. Ensure you override default Shadcn border radius to match the rounded-none/sharp aesthetic of this design."
+}
