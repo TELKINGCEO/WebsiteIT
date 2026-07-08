@@ -1,3 +1,5 @@
+import mspImg from "@/assets/images/industries/MSP.png";
+
 export const COMPANY = {
   name: "TechAssist Pro",
   tagline: "IT support, engineered like craft.",
@@ -102,17 +104,14 @@ export const SERVICES = [
 
 export const INDUSTRIES = [
   {
-    slug: "finance",
-    name: "Finance & Fintech",
-    kicker: "01 — Regulated",
+    slug: "MSPs",
+    name: "Managed Services Provider",
+    kicker: "01 — Managed",
     description:
-      "SOC 2, PCI-DSS and SEC-aware operations for banks, RIAs, hedge funds and fintech scaleups. Zero-trust from ledger to laptop.",
-    image:
-      "https://images.unsplash.com/photo-1686100511314-7d4a52987f2f?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NTYxODl8MHwxfHNlYXJjaHwyfHxtb2Rlcm4lMjBmaW5hbmNlJTIwY29ycG9yYXRlJTIwb2ZmaWNlfGVufDB8fHx8MTc4MzI1NDE3OXww&ixlib=rb-4.1.0&q=85",
-    stats: [
-      { k: "of AUM protected", v: "$40B+" },
-      { k: "audit pass rate", v: "100%" },
-    ],
+      "Our mission is to help global Managed Service Providers (MSPs) and tech enterprises maintain
+uninterrupted 24/7/365 coverage",
+    image: mspImg,
+      "",
   },
   {
     slug: "healthcare",
